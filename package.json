@@ -4,7 +4,8 @@
   "description": "Help a farmer plant his seeds.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:changes": "mocha -w"
   },
   "repository": {
     "type": "git",

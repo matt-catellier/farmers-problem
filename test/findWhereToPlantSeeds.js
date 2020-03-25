@@ -2,15 +2,15 @@ const findWhereToPlantSeeds = require('../findWhereToPlantSeeds')
 var expect  = require('chai').expect;
 
 describe('findWhereToPlantSeeds', () => {
-    describe('Given a plot of land and 1 seed, When you plant your seeds', () => {
+    describe.only('Given a plot of land and 1 seed, When you plant your seeds', () => {
         const numSeeds = 1
-            const plot = [
-                [5,5,5,5,5],
-                [5,4,2,1,3],
-                [5,4,5,4,5],
-                [1,4,1,1,3],
-                [2,4,3,1,5],
-            ]
+        const plot = [
+            [5,5,5,5,5],
+            [5,4,2,1,3],
+            [5,4,5,4,5],
+            [1,4,1,1,3],
+            [2,4,3,1,5],
+        ]
         it('Then it should have score 1', () => {
             const actual = findWhereToPlantSeeds(numSeeds, plot)[0]
             expect(actual).to.equal(1)
